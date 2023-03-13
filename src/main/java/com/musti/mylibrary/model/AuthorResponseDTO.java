@@ -19,8 +19,10 @@ public class AuthorResponseDTO {
         id = author.getId();
         name = author.getName();
         bookResponseDTO = new ArrayList<>();
-        for (Book book: author.getBooks()) {
-            bookResponseDTO.add(new BookResponseDTO(book));
+        if(author.getBooks() != null){
+            for (Book book: author.getBooks()) {
+                bookResponseDTO.add(new BookResponseDTO(book));
+            }
         }
     }
 

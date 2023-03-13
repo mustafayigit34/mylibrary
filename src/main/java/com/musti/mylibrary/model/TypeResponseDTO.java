@@ -20,8 +20,10 @@ public class TypeResponseDTO {
         id = type.getId();
         name = type.getName();
         bookResponseDTO = new ArrayList<>();
-        for (Book book: type.getBooks()) {
-            bookResponseDTO.add(new BookResponseDTO(book));
+        if(type.getBooks() != null){
+            for (Book book: type.getBooks()) {
+                bookResponseDTO.add(new BookResponseDTO(book));
+            }
         }
     }
 }
