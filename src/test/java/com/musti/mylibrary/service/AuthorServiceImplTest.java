@@ -99,4 +99,19 @@ public class AuthorServiceImplTest {
         // then
         assertNotNull(result);
     }
+
+    @Test
+    public void findByIdAuthorResponseDTO(){
+
+        // given
+        Author author = new Author("Gogol");
+
+        when(authorDAO.findById(anyInt())).thenReturn(author);
+
+        // when
+        AuthorResponseDTO result = authorService.findByIdAuthorResponseDTO(anyInt());
+
+        // then
+        assertNotNull(result);
+    }
 }
