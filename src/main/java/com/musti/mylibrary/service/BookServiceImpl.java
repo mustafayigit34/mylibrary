@@ -6,6 +6,7 @@ import com.musti.mylibrary.entity.Book;
 import com.musti.mylibrary.entity.Type;
 import com.musti.mylibrary.model.BookResponseDTO;
 import com.musti.mylibrary.model.CreateBookRequestDTO;
+import com.musti.mylibrary.model.Status;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
@@ -90,5 +91,17 @@ public class BookServiceImpl implements BookService{
     @Transactional
     public void deleteById(int theId) {
         bookDAO.deleteById(theId);
+    }
+
+    @Override
+    @Transactional
+    public BookResponseDTO updateBookStatusById(int bookId, Status status){
+        Book book = bookDAO.findById(bookId);
+
+        book.setStatus(status.ordinal());
+
+        bookDAO.save(book);
+
+        return new BookResponseDTO(book);
     }
 }

@@ -20,6 +20,7 @@ public class AuthorServiceImplTest {
     @MockBean
     public AuthorDAO authorDAO;
 
+
     @Test
     public void testFindAll(){
 
@@ -54,7 +55,7 @@ public class AuthorServiceImplTest {
     }
 
     @Test
-    public void saveAuthor(){
+    public void testSaveAuthor(){
 
         // given
         Author author = new Author("Gogol");
@@ -69,13 +70,14 @@ public class AuthorServiceImplTest {
     }
 
     @Test
-    public void deleteAuthorById(){
+    public void testDeleteAuthorById(){
 
         // given
         doNothing().when(authorDAO).deleteById(anyInt());
 
         // when
         authorDAO.deleteById(anyInt());
+
         // then
         verify(authorDAO, times(1)).deleteById(anyInt());
     }

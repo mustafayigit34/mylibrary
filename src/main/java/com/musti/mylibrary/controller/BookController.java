@@ -2,6 +2,7 @@ package com.musti.mylibrary.controller;
 
 import com.musti.mylibrary.model.BookResponseDTO;
 import com.musti.mylibrary.model.CreateBookRequestDTO;
+import com.musti.mylibrary.model.Status;
 import com.musti.mylibrary.service.AuthorService;
 import com.musti.mylibrary.service.BookService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -57,6 +58,12 @@ public class BookController {
         bookService.deleteById(bookId);
 
         return "Deleted - " + Integer.toString(bookId);
+    }
+
+
+    @PutMapping("/books")
+    public BookResponseDTO updateBookStatusById(@RequestParam(name="book") int bookId, @RequestParam(name="status") Status status){
+        return bookService.updateBookStatusById(bookId, status);
     }
 }
 
