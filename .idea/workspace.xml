@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5c4bb03f-e183-4455-b33a-2c7ae6e74b74" name="Changes" comment="Update books status" />
+    <list default="true" id="5c4bb03f-e183-4455-b33a-2c7ae6e74b74" name="Changes" comment="Update books status">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/musti/mylibrary/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/musti/mylibrary/controller/BookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/musti/mylibrary/model/BookResponseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/musti/mylibrary/model/BookResponseDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/musti/mylibrary/service/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/musti/mylibrary/service/BookService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/musti/mylibrary/service/BookServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/musti/mylibrary/service/BookServiceImpl.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,8 +19,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -51,7 +57,7 @@
     &quot;last_opened_file_path&quot;: &quot;C:/Users/Mustafa/Desktop/mylibrary&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.MylibraryApplication">
+  <component name="RunManager" selected="JUnit.BookServiceImplTest.testUpdateBookStatusById">
     <configuration name="MylibraryApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.musti.mylibrary.MylibraryApplication" />
       <module name="mylibrary" />
@@ -96,22 +102,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AuthorServiceImplTest.findByIdAuthorResponseDTO" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mylibrary" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.musti.mylibrary.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.musti.mylibrary.service" />
-      <option name="MAIN_CLASS_NAME" value="com.musti.mylibrary.service.AuthorServiceImplTest" />
-      <option name="METHOD_NAME" value="findByIdAuthorResponseDTO" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="AuthorServiceImplTest.testFindAllAuthorResponseDTO" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mylibrary" />
       <extension name="coverage">
@@ -128,13 +118,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="BookServiceImplTest.testUpdateBookStatusById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mylibrary" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.musti.mylibrary.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.musti.mylibrary.service" />
+      <option name="MAIN_CLASS_NAME" value="com.musti.mylibrary.service.BookServiceImplTest" />
+      <option name="METHOD_NAME" value="testUpdateBookStatusById" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BookServiceImplTest.testUpdateBookStatusById" />
         <item itemvalue="Application.MylibraryApplication" />
         <item itemvalue="JUnit.AuthorServiceImplTest" />
         <item itemvalue="JUnit.AuthorServiceImplTest.testFindAllAuthorResponseDTO" />
         <item itemvalue="JUnit.AuthorServiceImplTest.findAllAuthorResponseDTO" />
-        <item itemvalue="JUnit.AuthorServiceImplTest.findByIdAuthorResponseDTO" />
       </list>
     </recent_temporary>
   </component>
@@ -189,7 +195,21 @@
       <option name="project" value="LOCAL" />
       <updated>1679145713879</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Update books status">
+      <created>1679161612006</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1679161612006</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Update books status">
+      <created>1679161636229</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1679161636229</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
