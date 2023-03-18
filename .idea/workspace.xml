@@ -6,10 +6,16 @@
   <component name="ChangeListManager">
     <list default="true" id="5c4bb03f-e183-4455-b33a-2c7ae6e74b74" name="Changes" comment="Update books status">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/musti/mylibrary/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/musti/mylibrary/controller/BookController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/musti/mylibrary/model/BookResponseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/musti/mylibrary/model/BookResponseDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/musti/mylibrary/service/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/musti/mylibrary/service/BookService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/musti/mylibrary/service/BookServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/musti/mylibrary/service/BookServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mylibrary.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/musti/mylibrary/controller/AuthorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/musti/mylibrary/controller/api/AuthorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/musti/mylibrary/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/musti/mylibrary/controller/api/BookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/musti/mylibrary/controller/TypeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/musti/mylibrary/controller/api/TypeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/musti/mylibrary/controller/AuthorController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/musti/mylibrary/controller/BookController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/musti/mylibrary/controller/TypeController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/musti/mylibrary/model/AuthorResponseDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/musti/mylibrary/model/AuthorResponseDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/musti/mylibrary/model/TypeResponseDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/musti/mylibrary/model/TypeResponseDTO.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +27,7 @@
       <list>
         <option value="Enum" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -50,14 +57,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Mustafa/Desktop/mylibrary&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/Mustafa/Desktop/mylibrary",
+    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.General"
   }
-}</component>
-  <component name="RunManager" selected="JUnit.BookServiceImplTest.testUpdateBookStatusById">
+}]]></component>
+  <component name="RunManager" selected="Application.MylibraryApplication">
     <configuration name="MylibraryApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.musti.mylibrary.MylibraryApplication" />
       <module name="mylibrary" />
@@ -136,8 +145,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.BookServiceImplTest.testUpdateBookStatusById" />
         <item itemvalue="Application.MylibraryApplication" />
+        <item itemvalue="JUnit.BookServiceImplTest.testUpdateBookStatusById" />
         <item itemvalue="JUnit.AuthorServiceImplTest" />
         <item itemvalue="JUnit.AuthorServiceImplTest.testFindAllAuthorResponseDTO" />
         <item itemvalue="JUnit.AuthorServiceImplTest.findAllAuthorResponseDTO" />
@@ -209,12 +218,41 @@
       <option name="project" value="LOCAL" />
       <updated>1679161636229</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Update books status">
+      <created>1679163240802</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1679163240802</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Update books status">
+      <created>1679163259960</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1679163259960</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added AuthorService test." />
     <MESSAGE value="Update books status" />
     <option name="LAST_COMMIT_MESSAGE" value="Update books status" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/musti/mylibrary/controller/view/AuthorViewController.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

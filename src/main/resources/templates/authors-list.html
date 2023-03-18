@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>All Authors</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+          crossorigin="anonymous">
+
+    <style>
+        /* Styles for the nested table */
+        .table-status-0 {
+            background-color: #B6E2A1;
+        }
+        .table-status-1 {
+            background-color: #FFFBC1;
+        }
+        .table-status-2 {
+            background-color: #FEBE8C;
+        }
+        .table-status-3 {
+            background-color: #F7A4A4;
+        }
+    </style>
+
+</head>
+
+<body>
+<div class="container">
+    <h1 class="text-center mt-5">All Authors</h1>
+    <table class="table table-striped mt-5 table-bordered">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Books</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="author : ${authors}">
+            <td th:text="${author.id}"></td>
+            <td th:text="${author.name}"></td>
+            <td>
+                <table class="table table-sm" style="margin-bottom:0px;">
+                    <tbody>
+                    <tr th:each="book : ${author.bookResponseDTO}">
+                        <td th:hidden="${book.id}"></td>
+                        <td th:text="${book.name}" th:class="${book.status < 1} ? 'table-status-0' :
+                                                            (${book.status < 2} ? 'table-status-1' :
+                                                            (${book.status < 3} ? 'table-status-2' :
+                                                            'table-status-3'))"></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+
+</html>
