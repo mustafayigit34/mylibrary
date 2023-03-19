@@ -4,9 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5c4bb03f-e183-4455-b33a-2c7ae6e74b74" name="Changes" comment="Thymeleaf start">
+    <list default="true" id="5c4bb03f-e183-4455-b33a-2c7ae6e74b74" name="Changes" comment="Update books status">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/musti/mylibrary/controller/view/AuthorViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/musti/mylibrary/controller/view/AuthorViewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mylibrary.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/musti/mylibrary/controller/AuthorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/musti/mylibrary/controller/api/AuthorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/musti/mylibrary/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/musti/mylibrary/controller/api/BookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/musti/mylibrary/controller/TypeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/musti/mylibrary/controller/api/TypeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/musti/mylibrary/controller/AuthorController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/musti/mylibrary/controller/BookController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/musti/mylibrary/controller/TypeController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/musti/mylibrary/model/AuthorResponseDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/musti/mylibrary/model/AuthorResponseDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/musti/mylibrary/model/TypeResponseDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/musti/mylibrary/model/TypeResponseDTO.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +32,6 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -224,35 +232,20 @@
       <option name="project" value="LOCAL" />
       <updated>1679163259960</updated>
     </task>
-    <task id="LOCAL-00011" summary="Thymeleaf start">
-      <created>1679246983733</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1679246983733</updated>
-    </task>
-    <task id="LOCAL-00012" summary="Thymeleaf start">
-      <created>1679247046569</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1679247046569</updated>
-    </task>
-    <option name="localTasksCounter" value="13" />
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added AuthorService test." />
     <MESSAGE value="Update books status" />
-    <MESSAGE value="Thymeleaf start" />
-    <option name="LAST_COMMIT_MESSAGE" value="Thymeleaf start" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update books status" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/musti/mylibrary/controller/view/AuthorViewController.java</url>
-          <line>32</line>
+          <line>33</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

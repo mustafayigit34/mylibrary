@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>All Authors</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+          crossorigin="anonymous">
+
+</head>
+
+<body>
+
+<div class="container">
+    <h1 class="text-center mt-5">New Book</h1>
+
+    <form th:action="@{/book/save}" th:object="${book}" method="post">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" class="form-control" th:field="*{name}" id="name" placeholder="Enter book name">
+        </div>
+        <div class="form-group">
+            <label for="authorName">Author:</label>
+            <input type="text" class="form-control" th:field="*{authorName}" id="authorName" placeholder="Enter book author">
+        </div>
+        <div class="form-group">
+            <label for="pageNumber">ISBN:</label>
+            <input type="text" class="form-control" th:field="*{pageNumber}" id="pageNumber" placeholder="Enter book ISBN">
+        </div>
+
+        <label>Types:</label>
+        <div class="form-group" th:each="type : ${types}">
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" th:field="*{typeNames}" th:value=${type} id=${type} />
+                <label th:for=${type} th:text=${type}></label>
+            </div>
+        </div>
+
+            <input type="hidden" class="form-control" th:field="*{status}" id="publisher" value="0">
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+    <hr>
+
+     <a th:href="@{/book/books-list}">Back to Books List</a>
+
+</div>
+
+</body>
+
+</html>

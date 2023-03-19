@@ -13,7 +13,7 @@ public class BookResponseDTO {
     @JsonProperty("name")
     private String name;
     @JsonProperty("author_name")
-    private String authorId;
+    private String authorName;
     @JsonProperty("page_number")
     private int pageNumber;
     @JsonProperty("status")
@@ -25,7 +25,7 @@ public class BookResponseDTO {
     public BookResponseDTO(Book book) {
         id = book.getId();
         name = book.getName();
-        authorId = book.getAuthor().getName();
+        authorName = book.getAuthor().getName();
         pageNumber = book.getPageNumber();
         status = book.getStatus();
         typeNames = new ArrayList<>();
@@ -52,12 +52,12 @@ public class BookResponseDTO {
         this.name = name;
     }
 
-    public String getAuthorId() {
-        return authorId;
+    public String getAuthorName() {
+        return authorName;
     }
 
-    public void setAuthorId(String authorId) {
-        this.authorId = authorId;
+    public void setAuthorName(String authorName) {
+        this.authorName = authorName;
     }
 
     public int getPageNumber() {

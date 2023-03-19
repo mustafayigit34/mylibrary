@@ -26,6 +26,9 @@ public class CreateBookRequestDTO {
 
     }
 
+    public CreateBookRequestDTO() {
+    }
+
     public String getName() {
         return name;
     }
@@ -62,7 +65,7 @@ public class CreateBookRequestDTO {
         return typeNames;
     }
 
-    public void setTypeIds(List<String> typeNames) {
+    public void setTypeNames(List<String> typeNames) {
         this.typeNames = typeNames;
     }
 }
