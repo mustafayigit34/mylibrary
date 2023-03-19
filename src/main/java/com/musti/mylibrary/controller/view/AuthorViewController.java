@@ -29,7 +29,6 @@ public class AuthorViewController {
         List<AuthorResponseDTO> authors = authorService.findAllAuthorResponseDTO();
 
         model.addAttribute("authors",authors);
-        model.addAttribute("books",authors.get(2).getBookResponseDTO());
 
         return "authors-list";
     }
