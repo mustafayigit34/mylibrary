@@ -1,0 +1,19 @@
+<changelist name="Uncommitted_changes_before_Update_at_3_20_2023_3_22_AM_[Changes]" date="1679271765106" recycled="false" toDelete="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_20_2023_3_22_AM_[Changes]/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Update at 3/20/2023 3:22 AM [Changes]" />
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/com/musti/mylibrary/model/TypeResponseDTO.class" />
+    <option name="AFTER_PATH" value="target/classes/com/musti/mylibrary/model/TypeResponseDTO.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_20_2023_3_22_AM_[Changes]/TypeResponseDTO.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/com/musti/mylibrary/model/CreateBookRequestDTO.class" />
+    <option name="AFTER_PATH" value="target/classes/com/musti/mylibrary/model/CreateBookRequestDTO.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_20_2023_3_22_AM_[Changes]/CreateBookRequestDTO.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/com/musti/mylibrary/model/BookResponseDTO.class" />
+    <option name="AFTER_PATH" value="target/classes/com/musti/mylibrary/model/BookResponseDTO.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_20_2023_3_22_AM_[Changes]/BookResponseDTO.class" />
+  </binary>
+</changelist>

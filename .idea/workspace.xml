@@ -4,17 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5c4bb03f-e183-4455-b33a-2c7ae6e74b74" name="Changes" comment="Update books status">
+    <list default="true" id="5c4bb03f-e183-4455-b33a-2c7ae6e74b74" name="Changes" comment="Thymeleaf start">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mylibrary.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/musti/mylibrary/controller/AuthorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/musti/mylibrary/controller/api/AuthorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/musti/mylibrary/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/musti/mylibrary/controller/api/BookController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/musti/mylibrary/controller/TypeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/musti/mylibrary/controller/api/TypeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/musti/mylibrary/controller/AuthorController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/musti/mylibrary/controller/BookController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/musti/mylibrary/controller/TypeController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/musti/mylibrary/model/AuthorResponseDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/musti/mylibrary/model/AuthorResponseDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/book/book-form.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/book/book-form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/musti/mylibrary/model/BookResponseDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/musti/mylibrary/model/BookResponseDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/musti/mylibrary/model/CreateBookRequestDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/musti/mylibrary/model/CreateBookRequestDTO.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/musti/mylibrary/model/TypeResponseDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/musti/mylibrary/model/TypeResponseDTO.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -57,15 +51,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/Mustafa/Desktop/mylibrary",
-    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.General"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Mustafa/Desktop/mylibrary&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.General&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Application.MylibraryApplication">
     <configuration name="MylibraryApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.musti.mylibrary.MylibraryApplication" />
