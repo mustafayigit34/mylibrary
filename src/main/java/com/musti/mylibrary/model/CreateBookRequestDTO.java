@@ -3,6 +3,7 @@ package com.musti.mylibrary.model;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class CreateBookRequestDTO {
@@ -27,6 +28,16 @@ public class CreateBookRequestDTO {
     }
 
     public CreateBookRequestDTO() {
+    }
+
+    public CreateBookRequestDTO(CreateRequestBookModelDTO createRequestBookModelDTO){
+        this.name = createRequestBookModelDTO.getName();
+        this.authorName = createRequestBookModelDTO.getAuthorName();
+        this.pageNumber = createRequestBookModelDTO.getPageNumber();
+        this.status =  createRequestBookModelDTO.getStatus();
+        this.typeNames = new ArrayList<>();
+        this.typeNames = Arrays.asList(createRequestBookModelDTO.getTypeNames().split(","));
+
     }
 
     public String getName() {

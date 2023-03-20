@@ -32,21 +32,22 @@
   <a th:href="@{/book/showFormForAdd}"
      class="btn btn-primary btn-sm mt-3">Add New Book</a>
 
-  <table class="table table-striped mt-3 table-bordered">
+  <table class="table mt-3 table-bordered">
     <thead>
     <tr>
       <th>ID</th>
       <th>Name</th>
+      <th>Author Name</th>
     </tr>
     </thead>
     <tbody>
     <tr th:each="book : ${books}" th:class="${book.status < 1} ? 'table-status-0' :
-                                                            (${book.status < 2} ? 'table-status-1' :
-                                                            (${book.status < 3} ? 'table-status-2' :
-                                                            'table-status-3'))">
+                                           (${book.status < 2} ? 'table-status-1' :
+                                           (${book.status < 3} ? 'table-status-2' : 'table-status-3'))">
       <td th:text="${book.id}"></td>
       <td th:text="${book.name}"></td>
-      <td th:text="${book.status}"></td>
+      <td th:text="${book.authorName}"></td>
+      <!-- <td th:text="${book.status}"></td> -->
     </tr>
     </tbody>
   </table>

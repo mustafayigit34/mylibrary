@@ -1,11 +1,6 @@
 package com.musti.mylibrary.controller.view;
 
-import com.musti.mylibrary.entity.Book;
-import com.musti.mylibrary.entity.Type;
-import com.musti.mylibrary.model.BookResponseDTO;
-import com.musti.mylibrary.model.CreateBookRequestDTO;
-import com.musti.mylibrary.model.CreateTypeRequestDTO;
-import com.musti.mylibrary.model.TypeResponseDTO;
+import com.musti.mylibrary.model.*;
 import com.musti.mylibrary.service.AuthorService;
 import com.musti.mylibrary.service.BookService;
 import com.musti.mylibrary.service.TypeService;
@@ -17,7 +12,6 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @Controller
@@ -50,28 +44,16 @@ public class BookViewController {
     @GetMapping("/showFormForAdd")
     public String showFormForAdd(Model model){
 
-       CreateBookRequestDTO book = new CreateBookRequestDTO();
-
+        CreateRequestBookModelDTO book = new CreateRequestBookModelDTO();
         model.addAttribute("book", book);
-
-        /*List<TypeResponseDTO> typeResponseDTO = typeService.findAllTypeResponseDTO();
-        List<String> types = new ArrayList<>();
-        for (TypeResponseDTO type: typeResponseDTO) {
-            types.add(type.getName());
-        }*/
-        String typeNames = new String();
-
-        model.addAttribute("typeNames",typeNames);
-
 
         return "book/book-form";
     }
 
     @PostMapping("/save")
-    public String saveBook(@ModelAttribute("book") CreateBookRequestDTO createBookRequestDTO,
-                           @ModelAttribute("typeNames") String types){
+    public String saveBook(@ModelAttribute("book") CreateRequestBookModelDTO CreateRequestBookModelDTO){
 
-
+        CreateBookRequestDTO createBookRequestDTO = new CreateBookRequestDTO(CreateRequestBookModelDTO);
         bookService.save(createBookRequestDTO);
         System.out.println("ad");
         return "redirect:/book/books";

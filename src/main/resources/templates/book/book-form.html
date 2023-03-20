@@ -31,23 +31,22 @@
 <div class="container">
     <h1 class="text-center mt-5">New Book</h1>
 
-    <form th:action="@{/book/save}" th:object="${book}" method="post">
+    <form th:action="@{/book/save}" method="post">
+
         <div class="form-group">
             <label for="name">Name:</label>
-            <input type="text" class="form-control" th:field="*{name}" id="name" placeholder="Enter book name">
+            <input type="text" class="form-control" th:field="${book.name}" id="name" placeholder="Enter book name">
         </div>
+
         <div class="form-group">
             <label for="authorName">Author:</label>
-            <input type="text" class="form-control" th:field="*{authorName}" id="authorName" placeholder="Enter book author name">
+            <input type="text" class="form-control" th:field="${book.authorName}" id="authorName" placeholder="Enter book author name">
         </div>
+
         <div class="form-group">
             <label for="pageNumber">Page Number:</label>
-            <input type="number" class="form-control" th:field="*{pageNumber}" id="pageNumber" placeholder="Enter book page number">
+            <input type="number" class="form-control" th:field="${book.pageNumber}" id="pageNumber" placeholder="Enter book page number">
         </div>
-
-
-
-
 
         <div class="form-group">
             <label for="newItem">Type:</label>
@@ -56,17 +55,16 @@
         <button type="button" class="btn btn-secondary" onclick="addItemToList()">Add to List</button>
 
         <hr>
+
         <h3 style="margin-top:5px;">Current Type Selections</h3>
         <label for="typeNames">Type Names:</label>
         <ul class="list-group" id="typeNamesList">
             <li class="list-group-item" th:each="type : ${typeNamesList}" th:text="${type}"></li>
         </ul>
 
+            <input type="hidden" class="form-control" th:field="${book.typeNames}" id="typeNames">
 
-
-            <input type="text" class="form-control" th:object="${typeNames}" id="typeNames">
-
-            <input type="hidden" class="form-control" th:field="*{status}" id="publisher" value="0">
+            <input type="hidden" class="form-control" th:field="${book.status}" id="publisher" value="0">
 
         <button type="submit" class="btn btn-primary mt-3">Save Book</button>
     </form>
@@ -74,10 +72,7 @@
     <hr>
 
      <a th:href="@{/book/books}">Back to Books List</a>
-
 </div>
-
-
 
 <script>
     function addItemToList() {
