@@ -7,6 +7,23 @@
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
           crossorigin="anonymous">
 
+    <style>
+	.dropdown {
+	  position: relative;
+	  display: inline-block;
+	}
+
+	.dropdown-menu {
+	  display: none;
+	  position: absolute;
+	  z-index: 1;
+	}
+
+	.dropdown:hover .dropdown-menu {
+	  display: block;
+	}
+	</style>
+
 </head>
 
 <body>
@@ -21,24 +38,37 @@
         </div>
         <div class="form-group">
             <label for="authorName">Author:</label>
-            <input type="text" class="form-control" th:field="*{authorName}" id="authorName" placeholder="Enter book author">
+            <input type="text" class="form-control" th:field="*{authorName}" id="authorName" placeholder="Enter book author name">
         </div>
         <div class="form-group">
-            <label for="pageNumber">ISBN:</label>
-            <input type="text" class="form-control" th:field="*{pageNumber}" id="pageNumber" placeholder="Enter book ISBN">
+            <label for="pageNumber">Page Number:</label>
+            <input type="number" class="form-control" th:field="*{pageNumber}" id="pageNumber" placeholder="Enter book page number">
         </div>
 
-        <label>Types:</label>
-        <div class="form-group" th:each="type : ${types}">
-            <div class="form-check">
-                <input type="checkbox" class="form-check-input" th:field="*{typeNames}" th:value=${type} id=${type} />
-                <label th:for=${type} th:text=${type}></label>
-            </div>
+
+
+
+
+        <div class="form-group">
+            <label for="newItem">Type:</label>
+            <input type="text" class="form-control" id="newItem" name="newItem" placeholder="Enter new type">
         </div>
+        <button type="button" class="btn btn-secondary" onclick="addItemToList()">Add to List</button>
+
+        <hr>
+        <h3 style="margin-top:5px;">Current Type Selections</h3>
+        <label for="typeNames">Type Names:</label>
+        <ul class="list-group" id="typeNamesList">
+            <li class="list-group-item" th:each="type : ${typeNamesList}" th:text="${type}"></li>
+        </ul>
+
+
+
+            <input type="text" class="form-control" th:object="${typeNames}" id="typeNames">
 
             <input type="hidden" class="form-control" th:field="*{status}" id="publisher" value="0">
 
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-primary mt-3">Save Book</button>
     </form>
 
     <hr>
@@ -46,6 +76,32 @@
      <a th:href="@{/book/books}">Back to Books List</a>
 
 </div>
+
+
+
+<script>
+    function addItemToList() {
+      var newItem = document.getElementById("newItem").value;
+      if (newItem === '') {
+        alert("Please enter a value!");
+        return;
+      }
+      var ul = document.getElementById("typeNamesList");
+      var li = document.createElement("li");
+      li.appendChild(document.createTextNode(newItem));
+      li.classList.add("list-group-item");
+      ul.appendChild(li);
+      document.getElementById("newItem").value = '';
+
+      if (document.getElementById("typeNames").value === ''){
+        document.getElementById("typeNames").value = newItem;
+      }
+      else{
+        document.getElementById("typeNames").value = document.getElementById("typeNames").value + ',' +newItem;
+      }
+
+    }
+  </script>
 
 </body>
 

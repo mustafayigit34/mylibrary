@@ -6,10 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="5c4bb03f-e183-4455-b33a-2c7ae6e74b74" name="Changes" comment="Thymeleaf start">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/musti/mylibrary/controller/view/BookViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/musti/mylibrary/controller/view/BookViewController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/book/book-form.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/book/book-form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/musti/mylibrary/model/BookResponseDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/musti/mylibrary/model/BookResponseDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/musti/mylibrary/model/CreateBookRequestDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/musti/mylibrary/model/CreateBookRequestDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/musti/mylibrary/model/TypeResponseDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/musti/mylibrary/model/TypeResponseDTO.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -226,13 +224,21 @@
       <option name="project" value="LOCAL" />
       <updated>1679163259960</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Thymeleaf start">
+      <created>1679272010793</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1679272010793</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added AuthorService test." />
     <MESSAGE value="Update books status" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update books status" />
+    <MESSAGE value="Thymeleaf start" />
+    <option name="LAST_COMMIT_MESSAGE" value="Thymeleaf start" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -241,6 +247,35 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/musti/mylibrary/controller/view/AuthorViewController.java</url>
           <line>33</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/musti/mylibrary/service/BookServiceImpl.java</url>
+          <line>69</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/musti/mylibrary/model/BookResponseDTO.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/musti/mylibrary/controller/view/BookViewController.java</url>
+          <line>74</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/musti/mylibrary/controller/view/BookViewController.java</url>
+          <line>76</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/com/musti/mylibrary/controller/view/BookViewController.java</url>
+          <line>70</line>
+          <properties class="com.musti.mylibrary.controller.view.BookViewController" method="saveBook">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

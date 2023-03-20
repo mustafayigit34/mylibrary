@@ -50,26 +50,30 @@ public class BookViewController {
     @GetMapping("/showFormForAdd")
     public String showFormForAdd(Model model){
 
-        CreateBookRequestDTO book = new CreateBookRequestDTO();
+       CreateBookRequestDTO book = new CreateBookRequestDTO();
 
         model.addAttribute("book", book);
 
-        List<TypeResponseDTO> typeResponseDTO = typeService.findAllTypeResponseDTO();
+        /*List<TypeResponseDTO> typeResponseDTO = typeService.findAllTypeResponseDTO();
         List<String> types = new ArrayList<>();
         for (TypeResponseDTO type: typeResponseDTO) {
             types.add(type.getName());
-        }
+        }*/
+        String typeNames = new String();
 
-        model.addAttribute("types",types);
+        model.addAttribute("typeNames",typeNames);
+
 
         return "book/book-form";
     }
 
     @PostMapping("/save")
-    public String saveBook(@ModelAttribute("book") CreateBookRequestDTO createBookRequestDTO){
+    public String saveBook(@ModelAttribute("book") CreateBookRequestDTO createBookRequestDTO,
+                           @ModelAttribute("typeNames") String types){
+
 
         bookService.save(createBookRequestDTO);
-
+        System.out.println("ad");
         return "redirect:/book/books";
     }
 }
