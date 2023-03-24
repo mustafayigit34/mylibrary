@@ -4,12 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5c4bb03f-e183-4455-b33a-2c7ae6e74b74" name="Changes" comment="cant not fix second model attr">
+    <list default="true" id="5c4bb03f-e183-4455-b33a-2c7ae6e74b74" name="Changes" comment="fixed second model attr without not using second model">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/musti/mylibrary/controller/view/BookViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/musti/mylibrary/controller/view/BookViewController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/musti/mylibrary/model/CreateBookRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/musti/mylibrary/model/CreateBookRequestDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/musti/mylibrary/model/CreateRequestBookModelDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/musti/mylibrary/model/CreateRequestBookModelDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/musti/mylibrary/service/BookServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/musti/mylibrary/service/BookServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/book/book-form.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/book/book-form.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/book/books-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/book/books-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/book/books-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/book/books-list.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +30,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -261,7 +265,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679324211293</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="fixed second model attr without not using second model">
+      <created>1679324287635</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1679324287636</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -269,7 +280,8 @@
     <MESSAGE value="Update books status" />
     <MESSAGE value="Thymeleaf start" />
     <MESSAGE value="cant not fix second model attr" />
-    <option name="LAST_COMMIT_MESSAGE" value="cant not fix second model attr" />
+    <MESSAGE value="fixed second model attr without not using second model" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed second model attr without not using second model" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -280,33 +292,57 @@
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/musti/mylibrary/service/BookServiceImpl.java</url>
-          <line>69</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/musti/mylibrary/controller/view/BookViewController.java</url>
-          <line>56</line>
+          <line>54</line>
           <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/musti/mylibrary/controller/view/BookViewController.java</url>
-          <line>58</line>
+          <line>56</line>
           <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/musti/mylibrary/controller/view/BookViewController.java</url>
-          <line>50</line>
+          <line>48</line>
           <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/musti/mylibrary/model/CreateBookRequestDTO.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/musti/mylibrary/model/CreateBookRequestDTO.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/musti/mylibrary/controller/view/BookViewController.java</url>
+          <line>66</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/musti/mylibrary/service/BookServiceImpl.java</url>
+          <line>90</line>
+          <option name="timeStamp" value="26" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/com/musti/mylibrary/controller/view/BookViewController.java</url>
-          <line>53</line>
+          <line>51</line>
           <properties class="com.musti.mylibrary.controller.view.BookViewController" method="saveBook">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/com/musti/mylibrary/controller/view/BookViewController.java</url>
+          <line>60</line>
+          <properties class="com.musti.mylibrary.controller.view.BookViewController" method="showFormForUpdate">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="24" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

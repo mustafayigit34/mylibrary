@@ -2,7 +2,7 @@
 <html xmlns:th="http://www.thymeleaf.org" lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>All Authors</title>
+    <title>Save/Update Book</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
           crossorigin="anonymous">
@@ -29,7 +29,7 @@
 <body>
 
 <div class="container">
-    <h1 class="text-center mt-5">New Book</h1>
+    <h1 class="text-center mt-5">Save/Update Book</h1>
 
     <form th:action="@{/book/save}" method="post">
 
@@ -58,12 +58,13 @@
 
         <h3 style="margin-top:5px;">Current Type Selections</h3>
         <label for="typeNames">Type Names:</label>
-        <ul class="list-group" id="typeNamesList">
+        <ul class="list-group" id="typeNamesList" hidden>
             <li class="list-group-item" th:each="type : ${typeNamesList}" th:text="${type}"></li>
         </ul>
 
-            <input type="hidden" class="form-control" th:field="${book.typeNames}" id="typeNames">
+            <input type="text" class="form-control" th:field="${book.typeNames}" id="typeNames">
 
+            <input type="hidden" class="form-control" th:field="${book.id}" id="id">
             <input type="hidden" class="form-control" th:field="${book.status}" id="publisher" value="0">
 
         <button type="submit" class="btn btn-primary mt-3">Save Book</button>

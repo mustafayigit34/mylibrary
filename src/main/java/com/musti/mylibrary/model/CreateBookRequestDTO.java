@@ -8,6 +8,7 @@ import java.util.List;
 
 public class CreateBookRequestDTO {
 
+    private int id;
     private String name;
     private String authorName;
     private int pageNumber;
@@ -31,6 +32,7 @@ public class CreateBookRequestDTO {
     }
 
     public CreateBookRequestDTO(CreateRequestBookModelDTO createRequestBookModelDTO){
+        this.id = createRequestBookModelDTO.getId();
         this.name = createRequestBookModelDTO.getName();
         this.authorName = createRequestBookModelDTO.getAuthorName();
         this.pageNumber = createRequestBookModelDTO.getPageNumber();
@@ -38,6 +40,14 @@ public class CreateBookRequestDTO {
         this.typeNames = new ArrayList<>();
         this.typeNames = Arrays.asList(createRequestBookModelDTO.getTypeNames().split(","));
 
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getName() {

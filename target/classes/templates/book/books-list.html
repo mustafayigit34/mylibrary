@@ -48,11 +48,16 @@
       <td th:text="${book.name}"></td>
       <td th:text="${book.authorName}"></td>
       <!-- <td th:text="${book.status}"></td> -->
+      <td>
+        <a th:href="@{/book/showFormForUpdate(bookId=${book.id})}"
+           class="btn btn-info btn-sm ">
+          Update Book
+        </a>
+      </td>
     </tr>
     </tbody>
   </table>
 </div>
 
 </body>
-
 </html>

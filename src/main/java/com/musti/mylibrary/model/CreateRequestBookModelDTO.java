@@ -5,6 +5,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 public class CreateRequestBookModelDTO {
 
 
+    private int id;
     private String name;
     private String authorName;
     private int pageNumber;
@@ -12,9 +13,10 @@ public class CreateRequestBookModelDTO {
 
     private String typeNames;
 
-    public CreateRequestBookModelDTO(@JsonProperty("name") String name, @JsonProperty("author_name") String authorName,
+    public CreateRequestBookModelDTO(@JsonProperty("name") int id, @JsonProperty("name") String name, @JsonProperty("author_name") String authorName,
                                      @JsonProperty("page_number") int pageNumber, @JsonProperty("status") int status,
                                      @JsonProperty("type_names")String typeNames) {
+        this.id = id;
         this.name = name;
         this.authorName = authorName;
         this.pageNumber = pageNumber;
@@ -24,6 +26,14 @@ public class CreateRequestBookModelDTO {
     }
 
     public CreateRequestBookModelDTO() {
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getName() {

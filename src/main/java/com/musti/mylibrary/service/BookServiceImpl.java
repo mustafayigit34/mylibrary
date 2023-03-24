@@ -50,19 +50,24 @@ public class BookServiceImpl implements BookService{
     @Override
     @Transactional
     public BookResponseDTO save(CreateBookRequestDTO createBookRequestDTO) {
+        Book theBook;
+        if(createBookRequestDTO.getId() == 0) {
+            theBook = new Book(createBookRequestDTO.getName(), createBookRequestDTO.getPageNumber(), createBookRequestDTO.getStatus());
 
-        Book theBook = new Book(createBookRequestDTO.getName(), createBookRequestDTO.getPageNumber(),createBookRequestDTO.getStatus());
-
-        List<Author> theAuthorList = authorService.findAll();
-        int authorControl = 0;
-        for (Author theAuthor: theAuthorList) {
-            if(theAuthor.getName().equals(createBookRequestDTO.getAuthorName())){
-                theBook.setAuthor(theAuthor);
-                authorControl++;
+            List<Author> theAuthorList = authorService.findAll();
+            int authorControl = 0;
+            for (Author theAuthor : theAuthorList) {
+                if (theAuthor.getName().equals(createBookRequestDTO.getAuthorName())) {
+                    theBook.setAuthor(theAuthor);
+                    authorControl++;
+                }
+            }
+            if (authorControl == 0) {
+                theBook.setAuthor(authorService.save(new Author(createBookRequestDTO.getAuthorName())));
             }
         }
-        if(authorControl == 0){
-            theBook.setAuthor(authorService.save(new Author(createBookRequestDTO.getAuthorName())));
+        else{
+            theBook = bookDAO.findById(createBookRequestDTO.getId());
         }
 
         List<Type> responseTypes = new ArrayList<>();

@@ -1,5 +1,6 @@
 package com.musti.mylibrary.controller.view;
 
+import com.musti.mylibrary.entity.Book;
 import com.musti.mylibrary.model.*;
 import com.musti.mylibrary.service.AuthorService;
 import com.musti.mylibrary.service.BookService;
@@ -7,10 +8,7 @@ import com.musti.mylibrary.service.TypeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -51,11 +49,21 @@ public class BookViewController {
     }
 
     @PostMapping("/save")
-    public String saveBook(@ModelAttribute("book") CreateRequestBookModelDTO CreateRequestBookModelDTO){
+    public String saveBook(@ModelAttribute("book") CreateRequestBookModelDTO createRequestBookModelDTO){
 
-        CreateBookRequestDTO createBookRequestDTO = new CreateBookRequestDTO(CreateRequestBookModelDTO);
+        CreateBookRequestDTO createBookRequestDTO = new CreateBookRequestDTO(createRequestBookModelDTO);
         bookService.save(createBookRequestDTO);
-        System.out.println("ad");
+
         return "redirect:/book/books";
+    }
+
+    @GetMapping("/showFormForUpdate")
+    public String showFormForUpdate(@RequestParam("bookId") int bookId, Model model){
+
+        BookResponseDTO book = bookService.findById(bookId);
+
+        model.addAttribute("book",book);
+
+        return "book/book-form";
     }
 }
