@@ -4,15 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5c4bb03f-e183-4455-b33a-2c7ae6e74b74" name="Changes" comment="fixed second model attr without not using second model">
+    <list default="true" id="5c4bb03f-e183-4455-b33a-2c7ae6e74b74" name="Changes" comment="added update book without status">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/musti/mylibrary/controller/view/BookViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/musti/mylibrary/controller/view/BookViewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/musti/mylibrary/model/CreateBookRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/musti/mylibrary/model/CreateBookRequestDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/musti/mylibrary/model/CreateRequestBookModelDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/musti/mylibrary/model/CreateRequestBookModelDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/musti/mylibrary/service/BookServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/musti/mylibrary/service/BookServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/book/book-form.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/book/book-form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/book/books-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/book/books-list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/book/books-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/book/books-list.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -272,7 +265,21 @@
       <option name="project" value="LOCAL" />
       <updated>1679324287636</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="added update book without status">
+      <created>1679664508824</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1679664508824</updated>
+    </task>
+    <task id="LOCAL-00018" summary="added update book without status">
+      <created>1679664558273</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1679664558273</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -281,7 +288,8 @@
     <MESSAGE value="Thymeleaf start" />
     <MESSAGE value="cant not fix second model attr" />
     <MESSAGE value="fixed second model attr without not using second model" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed second model attr without not using second model" />
+    <MESSAGE value="added update book without status" />
+    <option name="LAST_COMMIT_MESSAGE" value="added update book without status" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
